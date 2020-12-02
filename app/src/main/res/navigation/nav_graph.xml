@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/ThirdFragment">
+    app:startDestination="@id/FirstFragment">
 
     <fragment
         android:id="@+id/FirstFragment"
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/ThirdFragment"
-        android:name="com.example.viewpager_navigationfragment_tablayout.SecondFragment"
+        android:name="com.example.viewpager_navigationfragment_tablayout.ThirdFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_third">
 
