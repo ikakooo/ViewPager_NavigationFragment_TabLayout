@@ -18,9 +18,9 @@ class MyViewPagerAdapter(fragmentManager: FragmentManager) : FragmentStatePagerA
 
     override fun getPageTitle(position: Int): CharSequence? =
             when (position) {
-                0 -> "First"
-                1 -> "Second"
-                else -> "Third"
+                0 -> "FirstPage"
+                1 -> "SecondPage"
+                else -> "ThirdPage"
             }
 
 }
