@@ -7,20 +7,22 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 
 class MyViewPagerAdapter(fragmentManager: FragmentManager) : FragmentStatePagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
-    override fun getCount(): Int = 3
+    override fun getCount(): Int = 4
 
     override fun getItem(position: Int): Fragment =
             when (position) {
                 0 -> FirstPageFragment()
                 1 -> SecondPageFragment()
-                else -> ThirdPageFragment()
+                2 -> ThirdPageFragment()
+                else -> FourPageFragment()
             }
 
     override fun getPageTitle(position: Int): CharSequence? =
             when (position) {
                 0 -> "FirstPage"
                 1 -> "SecondPage"
-                else -> "ThirdPage"
+                2 -> "ThirdPage"
+                else -> "FourPage"
             }
 
 }
