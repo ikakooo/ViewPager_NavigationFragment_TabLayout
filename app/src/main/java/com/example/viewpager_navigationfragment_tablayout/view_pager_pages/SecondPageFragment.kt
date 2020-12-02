@@ -1,6 +1,7 @@
 package com.example.viewpager_navigationfragment_tablayout.view_pager_pages
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +18,11 @@ class SecondPageFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_second_page, container, false)
+    }
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Log.d("fsdfsfsf", "onSaveInstanceState")
+        outState.putInt(COUNTER, counter)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
